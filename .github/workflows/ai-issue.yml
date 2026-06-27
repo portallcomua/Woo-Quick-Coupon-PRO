@@ -1,6 +1,6 @@
 name: AI Issue Worker
 
-on:
+'on':
   issues:
     types: [opened, edited]
   workflow_dispatch:
@@ -25,4 +25,4 @@ jobs:
           echo "Issue: ${{ github.event.issue.number }}"
 
       - name: Done
-        run: echo "Workflow is installed successfully." con
+        run: echo "Workflow is installed successfully."
